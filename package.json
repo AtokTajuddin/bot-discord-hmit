@@ -1,0 +1,20 @@
+{
+  "name": "discord_bot_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "deploy": "node src/deploy-commands.js",
+    "check": "node --check src/index.js && node --check src/deploy-commands.js && node --check src/events/messageCreate.js && node --check src/utils/database.js && node --check src/utils/xpCalculator.js && node --check src/commands/rank.js && node --check src/commands/leaderboard.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.24.0",
+  "dependencies": {
+    "better-sqlite3": "^12.9.0",
+    "discord.js": "^14.26.3",
+    "dotenv": "^17.4.2"
+  }
+}
